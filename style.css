@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:wght@700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+#main{
+            
+    background-image: url(img/bgMAIN.png);
+    
+    }
+    
+    #about{
+    
+    background-image: url(img/bgABOUT.png);
+    
+    }
+    
+    #skills{
+    
+    background-image: url(img/bgSKILLS.png);
+    
+    }
+    
+    #works{
+    
+    background-image: url(img/bgWORKS.png);
+    
+    }
+    
+    #comments{
+    
+    background-image: url(img/bgCOMMENTS.png);
+}
+
+.mascot {
+  padding-bottom: 30px;
+}
+
+.main-block, .about-block, .skills-block,
+.works-block, .comments-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.main-block{
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content{
+  background-image: url(img/form1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 849px;
+  height: 223px;
+  padding-left: 30px;
+}
+
+.main-title{
+  padding-top: 67px;
+  color: #2B2D35;
+  font-size: 80px;
+}
+
+.main-subtitle{
+  color: #2B2D35;
+  font-size: 20px;
+  font-family: 'Comfortaa';
+}
+
+.button{
+  width: 200px;
+  height: 60px;
+  border-radius: 100px;
+  border: 2px solid #000;
+  background: #BBFF2C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 0 #000000;
+  margin-top: 20px;
+  transition-duration: 0.35s;
+}
+
+.button:hover{
+  background: #a0d826;
+}
+
+.button a {
+  font-size: 20px;
+  text-decoration: none;
+} 
+
+
+
+@keyframes planet-move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(70px);
+  }
+}
+
+.moving-planet {
+  animation-name: planet-move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-image: url(img/moving-planet.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 230px;
+  transform: rotate(-15deg);
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.title{
+  padding-top: 100px;
+  text-align: center;
+  color: #FFF;
+  font-size: 80px;
+  text-shadow: 
+       5px 5px 0 #000000;
+}
+
+.about-content{
+  width: 35%;
+  height: 270px;
+  background: #792AFF;
+  padding-left: 40px ;
+  padding-top: 40px;
+  position: relative;
+  display: flex;
+}
+
+.about-title{
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 463px;
+  margin-bottom: 20px;
+  font-family: 'Comfortaa';
+}
+
+.about-card{
+  background-image: 
+      url(img/form2.png);
+  background-repeat: 
+               no-repeat;
+  width: 376px;
+  height: 346px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.about-card p{
+  color: #000;
+  font-size: 17px;
+  align-self: start;
+  padding-left: 20px;
+  line-height: 25px;
+  font-family: 'Comfortaa';
+}
+
+.about-card img{
+  padding-bottom: 20px;
+}
