@@ -384,7 +384,7 @@ footer{
         font-size: 30px;
     } 
     .main-subtitle{
-        font-size: 15px;
+        display: none;
     } 
     
     .planet, .moving-cloud, .moving-planet2{
@@ -411,7 +411,7 @@ footer{
     }
 
     .about-card img{
-        width: 85%;
+        width: 45%;
     }
 
     .about-content{
