@@ -489,6 +489,7 @@ footer{
         width: 150px;
         height: 40px;
         z-index: 2;
+        padding-bottom: 25px;
     }
     
     .button a {
