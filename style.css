@@ -425,8 +425,9 @@ footer{
     }
 
     .skills-card{
-        margin: 20px;
+        margin: 13px;
         padding-left: 10px;
+        padding-top: 40px;
         background-size: contain;
     }
 
