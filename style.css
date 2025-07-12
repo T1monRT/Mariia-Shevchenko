@@ -365,135 +365,175 @@ footer{
 /* Мобильная адаптация */
 
 @media (max-width: 1000px) {
- 
+
     .nav-links {
         display: none;
     }
 
-    .logo{
-        font-size: 40px;
+    .logo {
+        font-size: 50px;
         padding-left: 20px;
     }
 
-    .main-content{
-        max-width: 320px;
-    }
-
-    .main-title{
-        padding-top: 30px;
-        font-size: 30px;
-    } 
-    .main-subtitle{
-        display: none;
-    } 
-    
-    .planet, .moving-cloud, .moving-planet2{
-        display: none;
-    }
-
-    .title{
-        font-size: 50px;
-        padding-top: 30px;
-    }
-
-    .about-block{
-        flex-direction: column;
-        margin-top: 20px;
-        padding: 0;
-    }
-
-    .about-card{
-        order: -1;
+    .main-content {
+        width: 95%;
+        height: auto;
         background-size: contain;
-        padding-top: 20px;
-        width: 326px;
-        height: 296px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
     }
 
-    .about-card img{
-        width: 43%;
-    }
-
-    .about-content{
-        width: 75%;
-        height: 250px;
-        margin-bottom: 20px;
-    }
-
-    .about-title{
-        font-size: 18px;
-    }
-
-    .skills-card{
-        margin: 13px;
-        padding-left: 10px;
-        padding-top: 40px;
-        background-size: contain;
-    }
-
-    .skills-card p{
-        font-size: 16px;
-        margin-top: 15%;
-        margin-bottom: 20px;
-    }
-
-    .skills-section{
-        min-height: 60vh;
-    }
-
-    .skills-card .button{
-        position: absolute;
-        bottom: 100px;
-    }
-
-    .works-block{
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    .works-block img{
-        margin: 20px 0;
-        width: 80%;
-    }
-
-    .comments-block{
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 0 auto;
-        padding-top: 50px;
-    }
-
-    .comment{
-        background-image: url(img/comment-mobile.png);
-    }
-
-    .comment p{
-        font-size: 15px;
-        max-width: 290px;
-    }
-
-    footer{
-        height: 200px;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .footer-info{
+    .main-title {
+        font-size: 40px;
+        padding-top: 30px;
         text-align: center;
     }
 
+    .main-subtitle {
+        font-size: 16px;
+        padding-left: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
 
-    .button{
-        width: 150px;
-        height: 40px;
-        z-index: 2;
-        padding-bottom: 15px;
+    .button {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 20px;
     }
-    
+
     .button a {
-        font-size: 15px;
+        font-size: 16px;
     }
-    
+
+    .title {
+        font-size: 50px;
+        padding-top: 60px;
+    }
+
+    .about-block {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-card {
+        width: 90%;
+        height: auto;
+        background-size: contain;
+        margin-bottom: 20px;
+    }
+
+    .about-card img {
+        width: 50%;
+        height: auto;
+    }
+
+    .about-card p {
+        font-size: 15px;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .about-content {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 18px;
+    }
+
+    .skills-section {
+        padding: 20px;
+    }
+
+    .skills-card {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        background-size: contain;
+        padding: 20px 10px;
+    }
+
+    .skills-card p {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .skills-card .button {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .works-block {
+        flex-direction: column;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .works-block img {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .comments-block {
+        flex-direction: column;
+        padding: 40px 10px;
+        align-items: center;
+    }
+
+    .comment-card {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        background-size: contain;
+        margin-bottom: 20px;
+    }
+
+    .comment-card h3 {
+        font-size: 16px;
+    }
+
+    .comment-card p {
+        font-size: 14px;
+    }
+
+    .comment {
+        width: 95%;
+        height: auto;
+        background-size: contain;
+        padding: 20px;
+    }
+
+    .comment p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .footer-info p,
+    .footer-year p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+
 }
