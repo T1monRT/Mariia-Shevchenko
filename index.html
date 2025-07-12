@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariia-Shevchenko</title>
-    <link rel="stylesheet" href="style.css">
+<!-- Correct CDN Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+<!-- Your custom CSS -->
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
@@ -77,15 +81,37 @@
             </div>
         </div>
     </section>
+    
+<section id="works">
+  <h1 class="title">Works</h1>
+  <div class="swiper works-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/work1.jpg" alt="Work 1"></div>
+      <div class="swiper-slide"><img src="img/work2.jpg" alt="Work 2"></div>
+      <div class="swiper-slide"><img src="img/work3.jpg" alt="Work 3"></div>
+      <div class="swiper-slide"><img src="img/work4.jpg" alt="Work 4"></div>
+      <div class="swiper-slide"><img src="img/work5.jpg" alt="Work 5"></div>
+      <div class="swiper-slide"><img src="img/work6.jpg" alt="Work 6"></div>
+    </div>
 
-    <section id="works">
-        <h1 class="title">Works</h1>
-        <div class="works-block">
-            <img src="img/work2.jpg">
-            <img src="img/work1.jpg">
-            <img src="img/work3.jpg">
-        </div>
-    </section>
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
     <section id="comments">
         <h1 class="title">Comments</h1>
@@ -127,6 +153,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
