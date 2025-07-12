@@ -272,8 +272,18 @@ nav{
 
 /* Работы */
 
-/* Make swiper bigger */
-.swiper {
+.work4img {
+    width: 70%;
+}
+
+/* Add right padding to slide 2 only */
+.work2-slide {
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+
+.swiper-slide {
     width: 90%;
     max-width: 1200px;  /* increased max-width for wider swiper */
     height: 700px;      /* increased height from 500px to 700px */
@@ -290,7 +300,6 @@ nav{
     transition: transform 0.3s ease;
 }
 
-
 .works-swiper {
     width: 90%;
     max-width: 1200px;
@@ -301,29 +310,55 @@ nav{
 
 .works-swiper .swiper-slide {
     display: flex;
+    flex-direction: column;  /* stack vertically */
     justify-content: center;
     align-items: center;
-    height: 100%;  /* make slides fill swiper height */
+    height: 100%;
+    min-height: 550px;
 }
 
-.works-swiper .swiper-slide img {
-    width: 90%;
-    max-height: 100%;  /* fill vertical space */
-    height: auto;
-    object-fit: contain;
+.works-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 550px;
+    box-sizing: border-box;
+}
+
+.multi-image-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 130%;
+    padding: 10px 0;
+}
+
+.multi-image-horizontal img {
+    width: 47%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
     box-shadow: 7px 7px 0 #000;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
 }
 
-.works-swiper .swiper-slide img:hover {
-    transform: scale(1.05);
-}
 
+.slide-caption {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-size: 18px;
+    color: #bbff1e;
+    text-shadow: 2px 2px 4px #000;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #BBFF2C;
+    color: #bbff2c;
     width: 40px;
     height: 40px;
 }
@@ -332,6 +367,12 @@ nav{
     bottom: 0;
     text-align: center;
 }
+
+
+.multi-image-horizontal img:hover {
+    transform: scale(1.03);
+}
+
 
 
 /* Отзывы */
@@ -507,6 +548,19 @@ footer{
         width: 80%;
     }
 
+@media (max-width: 1000px) {
+  .multi-image-horizontal {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .multi-image-horizontal img {
+    width: 48%;
+    height: 300px;
+  }
+}
+
     .comments-block{
         flex-direction: column;
         align-items: center;
@@ -544,5 +598,4 @@ footer{
     .footer-links a {
         margin: 0 10px;
     }
-
 }

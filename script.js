@@ -37,8 +37,8 @@ window.onscroll = function() {
 
 const swiper = new Swiper('.works-swiper', {
   slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
+  spaceBetween: 50,
+  loop: true, 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -48,15 +48,9 @@ const swiper = new Swiper('.works-swiper', {
     clickable: true,
   },
   breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    }
+    0: { slidesPerView: 1 },
+    653: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
   }
 });
 
