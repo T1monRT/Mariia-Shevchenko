@@ -192,9 +192,9 @@ nav{
 .about-content{
     width: 35%;
     height: 270px;
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     background: #792AFF;
-    padding-left: 40px ;
+    padding-left: 30px ;
     padding-top: 40px;
     position: relative;
     display: flex;
@@ -202,30 +202,31 @@ nav{
 
 .about-title{
     color: #FFF;
-    font-size: 20px;
-    max-width: 463px;
-    margin-bottom: 20px;
+    font-size: 18.5px;
+    max-width: 810px;
+    margin-bottom: 60px;
     font-family: 'Comfortaa';
 }
 
 .about-card{
     background-image: url(img/form2.png);
     background-repeat: no-repeat;
-    width: 240px;
-    height: 356px;
+    width: 265px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
     position: relative;
+    border-radius: 0px 10px 15px 0px;
 }
 
 .about-card p{
     color: #000;
     font-size: 17px;
     align-self: start;
-    padding-left: 20px;
+    padding-left: 10px;
     line-height: 21px;
     font-family: 'Comfortaa';
 }
@@ -243,6 +244,7 @@ nav{
     bottom: 30px;
     left: 30px;
 }
+
 
 /* Навыки */
 
