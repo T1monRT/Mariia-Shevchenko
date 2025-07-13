@@ -472,12 +472,8 @@ footer{
 .footer-year p{
     font-family: 'Comfortaa';
     letter-spacing: 1.5px;
-    padding-right: 425px;
-}
-
-.footer-links a{
-    margin-right: 15px;
-}
+    padding-right: 265px;
+} 
 
 /* Мобильная адаптация */
 
@@ -623,5 +619,8 @@ footer{
 
     .footer-links a {
         margin: 0 10px;
+    }
+    .footer-number {
+        color: #a0d826;
     }
 }
