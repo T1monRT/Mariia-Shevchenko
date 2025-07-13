@@ -56,6 +56,11 @@ section{
     z-index: 2;
 }
 
+.main-content-img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 .main-title{
     padding-top: 67px;
     color: #2B2D35;
@@ -212,14 +217,14 @@ nav{
     background-image: url(img/form2.png);
     background-repeat: no-repeat;
     width: 265px;
-    height: 320px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
     position: relative;
-    border-radius: 0px 10px 15px 0px;
+    border-radius: 0% 10px 10px 10px;
 }
 
 .about-card p{
@@ -280,7 +285,7 @@ nav{
 
 /* Add right padding to slide 2 only */
 .work2-slide {
-    padding-right: 60px;
+    padding-right: 40px;
     box-sizing: border-box;
 }
 
@@ -371,7 +376,7 @@ nav{
 }
 
 
-.multi-image-horizontal img:hover {
+.swiper-slide img:hover {
     transform: scale(1.03);
 }
 
@@ -432,7 +437,7 @@ nav{
 /* Подвал */
 
 footer{
-    background-color: #200153;
+    background-color: #0a0027;
     height: 110px;
     display: flex;
     justify-content: space-around;
@@ -497,25 +502,26 @@ footer{
     }
 
     .about-card{
-        order: -1;
-        background-size: contain;
-        padding-top: 20px;
-        width: 326px;
-        height: 296px;
+     display: none;
     }
 
     .about-card img{
-        width: 43%;
+        width: 53%;
     }
 
     .about-content{
         width: 75%;
-        height: 250px;
+        height: 830px;
         margin-bottom: 20px;
+        border-radius: 10px 10px 10px 10px;
     }
 
     .about-title{
         font-size: 18px;
+    }
+
+    .bb {
+        padding-left: 45px;
     }
 
     .skills-card{
