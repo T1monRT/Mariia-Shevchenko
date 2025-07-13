@@ -264,7 +264,7 @@ nav{
     background-color: #371992 ;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 600px;
+    height: 630px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,6 +291,8 @@ nav{
 
 .languages {
     padding-bottom: 0px;
+    padding-top: 30px;
+    padding-right: 10px;
 }
 
 /* Работы */
@@ -543,7 +545,7 @@ footer{
     .skills-card{
         margin: 13px;
         padding-left: 10px;
-        padding-top: 40px;
+        padding-top: 0px;
         background-size: contain;
     }
 
@@ -557,9 +559,9 @@ footer{
         min-height: 60vh;
     }
 
-    .skills-card .button{
+    .button{
         position: absolute;
-        bottom: 100px;
+        bottom: 40px;
     }
 
     .works-block{
