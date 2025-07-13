@@ -50,28 +50,28 @@ section{
     background-image: url(img/form1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 849px;
+    width: 749px;
     height: 223px;
-    padding-left: 30px;
     z-index: 2;
 }
 
 .main-content-img {
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
     margin-bottom: 10px;
 }
 
 .main-title{
     padding-top: 67px;
     color: #2B2D35;
-    font-size: 80px;
+    font-size: 70px;
+    text-align: center;
 }
 
 .main-subtitle{
     color: #2B2D35;
     font-size: 20px;
     font-family: 'Comfortaa';
-    padding-left: 335px;
+    text-align: center;
 }
 
 .button{
@@ -198,33 +198,30 @@ nav{
     width: 35%;
     height: 270px;
     border-radius: 10px 0px 0px 10px;
-    background: #792AFF;
-    padding-left: 30px ;
-    padding-top: 40px;
+    background: #6220d4;
+    padding: 20px;
+    padding-top: 30px;
     position: relative;
     display: flex;
 }
 
 .about-title{
     color: #FFF;
-    font-size: 18.5px;
+    font-size: 17.5px;
     max-width: 810px;
     margin-bottom: 60px;
     font-family: 'Comfortaa';
 }
 
 .about-card{
-    background-image: url(img/form2.png);
-    background-repeat: no-repeat;
-    width: 265px;
-    height: 300px;
+    background-color: #4307aa;
+    width: 360px;
+    height: 349px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    position: relative;
-    border-radius: 0% 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .about-card p{
@@ -236,15 +233,16 @@ nav{
     font-family: 'Comfortaa';
 }
 
-.about-card img{
-    padding-bottom: 20px;
+.about-card-img{
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: 5px solid #4307aa;
+    
 }
 
 .moving-cloud{
-    background: url(img/moving-cloud.png);
     background-repeat: no-repeat;
-    width: 180px;
-    height: 162px;
+    width: 140px;
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -253,28 +251,46 @@ nav{
 
 /* Навыки */
 
+.skills-title{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+}
+
 .skills-card{
-    background-image: url(img/form3.png);
+    background-color: #371992 ;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 450px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
     margin: 20px;
     padding-left: 10px;
-    width: 500px;
+    width: 330px;
+    border-radius: 15px;
 }
 
 .skills-card p{
-    color: #000;
+    color: #cc95ff;
     font-size: 18px;
     margin-top: 80px;
     margin-bottom: 30px;
     text-align: center;
     max-width: 500px;
     font-family: 'Comfortaa';
+}
+
+.momMOV {
+    border-radius: 10px;
+}
+
+.languages {
+    padding-bottom: 0px;
 }
 
 /* Работы */
@@ -505,8 +521,8 @@ footer{
      display: none;
     }
 
-    .about-card img{
-        width: 53%;
+    .about-card-img{
+        order: -1; /* make image appear first */
     }
 
     .about-content{
@@ -521,7 +537,7 @@ footer{
     }
 
     .bb {
-        padding-left: 45px;
+        padding-left: 60px;
     }
 
     .skills-card{
